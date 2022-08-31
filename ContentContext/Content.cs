@@ -2,8 +2,10 @@
 
 public abstract class Content
 {
-    public Content()
+    public Content(string title, string url)
     {
+        Title = title;
+        Url = url;
         Id = Guid.NewGuid();
     }
 
